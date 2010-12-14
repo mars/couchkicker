@@ -3,22 +3,22 @@
 var couchapp = require('couchapp');
 
 var ddoc = {
-	_id:'_design/app', 
-	shows: {}, 
-	updates: {}, 
-	views: {
-		names: {
-			map: function(doc) {
-				if (doc.name) emit(doc.name, null);
-			}
-		},
-		revs: {
-			map: function(doc) {
-				if (doc._rev) emit(doc._rev.split('-')[0], null);
-			}
-		}
-	}, 
-	lists: {}
+  _id:'_design/app', 
+  shows: {}, 
+  updates: {}, 
+  views: {
+    names: {
+      map: function(doc) {
+        if (doc.name) emit(doc.name, null);
+      }
+    },
+    revs: {
+      map: function(doc) {
+        if (doc._rev) emit(doc._rev.split('-')[0], null);
+      }
+    }
+  }, 
+  lists: {}
 };
 
 exports.app = ddoc;

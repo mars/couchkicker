@@ -15,7 +15,7 @@
   "modules": {
     "couchkicker" : "./lib/daemon"
   },
-	"scripts": {
-		"start": "node lib/daemon.js"
-	}
+  "scripts": {
+    "start": "node lib/daemon.js"
+  }
 }
