@@ -1,0 +1,21 @@
+{
+  "name": "couchkicker",
+  "version": "0.0.1",
+  "description": "A CouchDB \"update_notification\" client to keep views fresh.",
+  "keywords": [
+    "CouchDB"
+  ],
+  "author": "Mars Hall (http://marsorange.com)",
+  "engines": {
+    "node": "0.2.4"
+  },
+  "directories": {
+    "lib": ""
+  },
+  "modules": {
+    "couchkicker" : "./lib/daemon"
+  },
+	"scripts": {
+		"start": "node lib/daemon.js"
+	}
+}
